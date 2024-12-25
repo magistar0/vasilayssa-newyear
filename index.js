@@ -151,5 +151,5 @@ function closeWrongModal() {
 }
 
 function closeStartModal() {
-    window.location.href = "index.html";
+    window.location.href = "quiz.html";
 }

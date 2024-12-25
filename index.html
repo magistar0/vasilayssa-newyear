@@ -5,91 +5,17 @@
     <title>Тест</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="NextQuestion(0)">
+<body>
     <main>
-        <div class="modal-container" id="score-modal">
-
-            <div class="modal-content-container">
-
-                <h1>Поздравляю, это победа!</h1>
-
-                <div class="grade-details">
-                    <p>До получения подарка остался всего один шаг!</p>
-                </div>
-
-                <div class="modal-button-container">
-                    <button onclick="closeScoreModal()">Получить подарок</button>
-                </div>
-
-            </div>
-        </div>
 
         <div class="game-quiz-container">
 
             <div class="game-details-container">
-                <h1> Вопрос <span id="question-number"></span></h1>
+                <h1> Привет! <br> Чтобы получить свой подарок, тебе нужно пройти небольшой тест. Не волнуйся, он совсем не тяжелый. </h1>
             </div>
 
-            <div class="game-question-container">
-                <h1 id="display-question"></h1>
-            </div>
-
-            <div class="game-options-container">
-
-               <div class="modal-container" id="option-modal">
-
-                    <div class="modal-content-container">
-                         <h1>Выбери ответ!</h1>
-
-                         <div class="modal-button-container">
-                            <button onclick="closeOptionModal()">Назад</button>
-                        </div>
-
-                    </div>
-
-               </div>
-
-               <div class="modal-container" id="wrong-modal">
-
-                <div class="modal-content-container">
-                     <h1>Неверно, попробуй ещё раз!</h1>
-                     <p><span id="hint"></span></p>
-                     <div class="modal-button-container">
-                        <button onclick="closeWrongModal()">Спасибо</button>
-                    </div>
-
-                </div>
-
-           </div>
-
-                <span>
-                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
-                    <label for="option-one" class="option" id="option-one-label"></label>
-                </span>
-
-
-                <span>
-                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
-                    <label for="option-two" class="option" id="option-two-label"></label>
-                </span>
-
-
-                <span>
-                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
-                    <label for="option-three" class="option" id="option-three-label"></label>
-                </span>
-
-
-                <span>
-                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
-                    <label for="option-four" class="option" id="option-four-label"></label>
-                </span>
-
-
-            </div>
-
-            <div class="next-button-container">
-                <button onclick="handleNextQuestion()">Ответить</button>
+            <div class="start-button-container">
+                <button onclick="closeStartModal()">НАЧАТЬ</button>
             </div>
 
         </div>
