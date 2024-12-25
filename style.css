@@ -10,11 +10,6 @@ html, body{
     height: 100%;
 }
 
-body {
-    transform: scale(1.7); 
-    transform-origin: 1000 0; 
-  }
-
 
 body{
     font-family: 'Montserrat', serif;
